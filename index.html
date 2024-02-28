@@ -15,11 +15,44 @@
     <title>Seby's Fidget Spinners</title>
 
     <style>
-        .background{
+        .div-background{
+            width: 100%;
+            height: auto;
+            padding: 5%;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.43);
+            
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            column-gap: 3px;
+            row-gap: 3px;
+
 
         }
 
         body{
+        }
+
+        .text-box{
+            border: solid 1px;
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 50%;
+            min-width: 300px;
+
+        }
+
+        #img-setup{
+            display: block;
+            height: 30%;
+            width: 30%;
+            margin: 5px;
+            min-width: 300px;
+            
+
         }
 
         .carousel-inner img {
@@ -61,10 +94,6 @@
 
     }
 
-    .text-box{
-
-
-    }
 
     footer{
         width: 100%;
@@ -82,8 +111,6 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         
-
-
     }
     
 
@@ -132,17 +159,20 @@
 
 
     <!-- Welcoming -->
-    <div class="background">
+    <div class="div-background">
         <div class="text-box">
             <h2>Welcome to our page!</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet eos nulla molestias repellendus nam mollitia harum vel iste, saepe voluptates, soluta cumque quod optio, provident explicabo voluptatum dignissimos nemo a!</p>
         </div>
-        <img src="" alt="">
+        
+            <img src="Images/js1.jpg" alt="" id="img-setup">
+        
+        
     </div>
 
 
     <!-- Best Sellers-->
-    <div class="background">
+    <div class="div-background">
         <h3>Best Sellers</h3>
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
