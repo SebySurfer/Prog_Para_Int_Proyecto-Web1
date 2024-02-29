@@ -45,6 +45,7 @@ body{
     width: 20%;
     margin: 5px;
     min-width: 300px;
+    border-radius: 50%;
 
 }
 
@@ -67,6 +68,7 @@ margin-left: auto;
 margin-right: auto;
 max-width: 100%;
 height: auto;
+border-radius: 50%;
 }
 
 #carouselExampleDark1{
