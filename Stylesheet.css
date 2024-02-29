@@ -1,3 +1,15 @@
+body{
+    background-image: url(https://www.pixground.com/wp-content/uploads/2023/04/Trees-Mountains-Japanese-Painting-AI-Generated-4K-Wallpaper-jpg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+
+
 .div-background{
     width: 100%;
     height: auto;
