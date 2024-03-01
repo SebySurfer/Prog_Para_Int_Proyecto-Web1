@@ -7,6 +7,24 @@ body{
 
 }
 
+.navbar a{
+    color: white;
+    
+}
+
+.navbar div{
+    background-color: rgb(165, 39, 25);
+    padding: 2px;
+  
+}
+
+header {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+
 
 
 
