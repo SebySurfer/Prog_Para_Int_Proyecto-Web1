@@ -41,7 +41,7 @@ header {
 .div-background{
     width: 100%;
     height: auto;
-    padding: 5%;
+    padding: 7%;
     margin-top: 100px;
     margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.43);
@@ -195,6 +195,12 @@ transform: translate(-50%, -50%);
     position: absolute;
     margin: 5px;
     margin-left: 15px;
+    margin-bottom: 10px !important;
+    width: 150px;
+    height: 40px;
+    background-color:rgb(247, 75, 32) ;
+    border-color: none;
+    border: 0px;
     
 
 
