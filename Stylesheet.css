@@ -5,6 +5,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
 
+    font-family: "Tinos";
+
+
 }
 
 .navbar a{
@@ -25,6 +28,7 @@ body{
 header {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    margin-top: 60px;
 }
 
 .navbar-brand{
@@ -34,7 +38,7 @@ header {
 
 .dropdown-menu {
     background-color: rgb(49, 104, 113);
-    text-align: left;
+    text-align: left !important;
 
 }
 
@@ -187,6 +191,9 @@ margin-top: 60px;
 margin-left: 50%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
+width: 200px;
+height: 50px;
+
 
 }
 
