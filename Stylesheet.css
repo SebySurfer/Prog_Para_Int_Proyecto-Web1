@@ -27,6 +27,11 @@ header {
     padding: 0; /* Remove default padding */
 }
 
+.navbar-brand{
+    font-size: 40px !important;
+
+}
+
 
 
 
