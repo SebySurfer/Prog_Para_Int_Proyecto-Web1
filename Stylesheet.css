@@ -64,10 +64,26 @@ body{
     width: 40%;
     margin: 5px;
     min-width: 300px;
-   
+
 
 
 }
+
+.carousel div{
+
+}
+
+.carousel-caption{
+    color: white;
+
+}
+
+.carousel-text{
+    color: white;
+
+}
+
+
 
 
 .carousel-inner img {
