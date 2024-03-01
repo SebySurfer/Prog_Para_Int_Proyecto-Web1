@@ -30,12 +30,18 @@ body{
 
 }
 .text-box{
-    border: solid 1px;
     margin-left: 5px;
     margin-right: 5px;
     width: 50%;
     min-width: 300px;
     height: auto;
+
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-size: 2.5vh;
+
 
 }
 
@@ -58,9 +64,11 @@ body{
     width: 40%;
     margin: 5px;
     min-width: 300px;
+   
 
 
 }
+
 
 .carousel-inner img {
 display: block;
