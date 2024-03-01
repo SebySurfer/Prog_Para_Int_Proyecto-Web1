@@ -7,8 +7,36 @@ body{
 
 }
 
+.navbar a{
+    color: white;
+    font-size: 2.2vh;
+    margin-left: 50px;
+    
+}
 
+.navbar div{
+    background-color: rgb(165, 39, 25);
+    padding: 2px;
+    height: 100px;
+    
+  
+}
 
+header {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-brand{
+    font-size: 40px !important;
+
+}
+
+.dropdown-menu {
+    background-color: rgb(49, 104, 113);
+    text-align: left;
+
+}
 
 .div-background{
     width: 100%;
@@ -30,12 +58,18 @@ body{
 
 }
 .text-box{
-    border: solid 1px;
     margin-left: 5px;
     margin-right: 5px;
     width: 50%;
     min-width: 300px;
     height: auto;
+
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-size: 2.5vh;
+
 
 }
 
@@ -60,7 +94,25 @@ body{
     min-width: 300px;
 
 
+
 }
+
+.carousel div{
+
+}
+
+.carousel-caption{
+    color: white;
+
+}
+
+.carousel-text{
+    color: white;
+
+}
+
+
+
 
 .carousel-inner img {
 display: block;
