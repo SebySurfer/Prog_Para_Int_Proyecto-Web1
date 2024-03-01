@@ -25,6 +25,7 @@ body{
 header {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    margin-top: 60px;
 }
 
 .navbar-brand{
@@ -34,7 +35,7 @@ header {
 
 .dropdown-menu {
     background-color: rgb(49, 104, 113);
-    text-align: left;
+    text-align: left !important;
 
 }
 
