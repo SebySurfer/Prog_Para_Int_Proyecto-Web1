@@ -87,13 +87,13 @@
             <div class="form-group row">
                 <label for="delivery-address" class="col-sm-4 col-form-label">Delivery Address:</label>
                 <div class="col-sm-8">
-                    <textarea class="form-control" id="delivery-address" name="delivery-address" rows="3" required></textarea>
+                    <textarea class="form-control" id="delivery-address" name="delivery_Address" rows="3" required></textarea>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="contact-number" class="col-sm-4 col-form-label">Contact Number:</label>
                 <div class="col-sm-8">
-                    <input type="tel" class="form-control" id="contact-number" name="contact-number" required>
+                    <input type="tel" class="form-control" id="contact-number" name="contact_Number" required>
                 </div>
             </div>
             <button type="submit" class="btn btn-dark">Order Now</button>
@@ -126,6 +126,46 @@
         
 
     </footer>
+
+
+    <!-- Handles form submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('order-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const formDataObject = {};
+                formData.forEach(function (value, key) {
+                    formDataObject[key] = value;
+                });
+
+                console.log(formDataObject);
+
+                // Send the form data to a server
+                fetch('/submit-order', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formDataObject)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Redirect the user to another page after successful submission
+                        window.location.href = 'thank-you-page.html';
+                    } else {
+                        throw new Error('Failed to submit form');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to submit form. Please try again.');
+                });
+            });
+        });
+    </script>
 
     
 </body>
