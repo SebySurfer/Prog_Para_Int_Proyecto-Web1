@@ -139,7 +139,7 @@
           });
 
           try {
-              const response = await fetch('/api/users/register', { // Send POST request to backend endpoint
+              const response = await fetch('http://localhost:4000/api/users/register', { // Send POST request to backend endpoint
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json'
