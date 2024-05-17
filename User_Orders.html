@@ -127,6 +127,41 @@
 
     </footer>
 
+    <!-- JavaScript to handle form submission -->
+    <script>
+      document.getElementById('order-form').addEventListener('submit', async function(event) {
+          event.preventDefault(); // Prevent default form submission
+
+          const formData = new FormData(this); // Get form data
+          const formObject = {};
+          formData.forEach((value, key) => { // Convert form data to object
+              formObject[key] = value;
+          });
+
+          try {
+              const response = await fetch('/api/users/register', { // Send POST request to backend endpoint
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(formObject) // Convert form object to JSON string
+              });
+
+              if (response.ok) {
+                  const data = await response.json();
+                  console.log(data); // Log response data
+                  // Optionally, you can redirect the user or display a success message here
+              } else {
+                  console.error('Failed to register user');
+                  // Optionally, you can display an error message to the user here
+              }
+          } catch (error) {
+              console.error('Error:', error.message);
+              // Optionally, you can display an error message to the user here
+          }
+      });
+  </script>
+
     
 </body>
 </html>
